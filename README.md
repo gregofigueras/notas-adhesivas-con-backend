@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Frontend
 
 First, run the development server:
 
@@ -14,7 +14,26 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+
+## Backend NestJS
+
+El backend está dentro de `backend/` y guarda las notas en `data/notas.json`.
+
+```bash
+npm run backend
+```
+
+La API queda disponible en `http://localhost:3002` y la documentación de
+Swagger en `http://localhost:3002/docs`.
+
+El estado del backend se puede consultar en `GET http://localhost:3002/health`.
+
+Para ejecutar los tests unitarios del servicio:
+
+```bash
+npm run backend:test
+```
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
